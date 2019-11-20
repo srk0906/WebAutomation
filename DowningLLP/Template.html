@@ -1,0 +1,151 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Automation Report for Monitoring Build</title>
+    <style>
+        html {
+            font-family: 'Lato', Calibri;
+            font-weight: 400;
+        }
+
+        .header {
+            background-color: #b7b7b7;
+            text-align: center;
+            display: block;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .header p {
+                font-size: 20px;
+                color: black;
+            }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            color: black;
+        }
+
+        th {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .tbl-summary {
+            width: 50%;
+            text-align: center;
+        }
+
+        .tbl-full {
+            width: 75%;
+            text-align: center;
+        }
+
+        div {
+            margin: 20px 30px 20px 30px;
+            display: block;
+        }
+
+            div p {
+                font-weight: 500;
+                color: green;
+                line-height: 1.5;
+            }
+
+        .div-half {
+            width: 50%;
+            border: 1px solid black;
+            padding: 0;
+            border-collapse: collapse;
+            margin-top: 30px;
+            height: auto;
+        }
+
+            .div-half > p {
+                margin: 0;
+                font-size: 15px;
+                color: black;
+                font-weight: 600;
+                margin-top: 3px;
+            }
+
+        .div-bg {
+            background: blanchedalmond;
+        }
+
+        .grey {
+            background-color: #b7b7b7;
+        }
+
+        .orange {
+            background-color: #f9c28c;
+        }
+
+        .green {
+            background-color: lightgreen;
+        }
+
+        .red {
+            background-color: lightcoral;
+        }
+
+        .yellow {
+            background-color: #FFFF99;
+        }
+
+        .tbl-full th {
+            background-color: #b7b7b7;
+        }
+
+        .small {
+            width: 8%;
+        }
+
+        .medium {
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <p>Automation Execution Report</p>
+    </div>
+    <div>
+        <table class="tbl-summary">
+            <thead>
+                <tr>
+                    <th class="grey">Total Count</th>
+                    <th class="green">Passed Count</th>
+                    <th class="red">Failed Count</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>$totalCountValue$</td>
+                    <td>$passedCountValue$</td>
+                    <td>$failedCountValue$</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <table class="tbl-full">
+            <thead>
+                <tr>
+                    <th class="medium">Test Category</th>
+                    <th class="medium">Test Scenario</th>
+                    <th class="small">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                $tableRows$
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
