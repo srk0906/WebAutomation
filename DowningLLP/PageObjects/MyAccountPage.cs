@@ -128,7 +128,7 @@ namespace DowningLLP.PageObjects
         {
             if (phoneNum == "")
             {
-                phoneNum = PhoneFaker.Phone();
+                phoneNum = Faker.StringFaker.Numeric(10);
             }
             Browser.EnterText(By.XPath(PhoneNumber), phoneNum);
         }
